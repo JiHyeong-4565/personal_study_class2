@@ -1,0 +1,17 @@
+N = int(input())
+A=[]
+A += list(map(int,input().split()))
+T,P = map(int,input().split())
+
+T_count = 0
+for i in A:
+    count = (i//T)
+
+    if (i%T != 0):
+        count += 1
+
+    T_count += count
+
+
+print(T_count)
+print(N // P,N % P)
