@@ -1,0 +1,15 @@
+N = int(input())
+
+A={}
+
+for i in range(N):
+    word = input()
+    A[word] = len(word)
+
+first_sort = sorted(A.items(), key = lambda x : (x[1],x[0]))
+
+for key,value in first_sort:
+    print(key)
+
+
+##sorted는 무조건 list로 반환 딕셔너리 sorted할시 튜플이 들어있는 리스트로 변환됨
