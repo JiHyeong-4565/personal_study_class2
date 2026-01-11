@@ -1,0 +1,7 @@
+N = int(input())
+A =list(map(int,input().split()))
+top_score = max(A)
+for i in range(len(A)):
+    A[i] = A[i] / top_score * 100
+
+print(sum(A) / len(A))
