@@ -1,0 +1,13 @@
+def cal_GCD(a,b):
+    if b == 0:
+        return a
+    else:
+        return cal_GCD(b,a%b)
+    
+def cal_LCM(a,b):
+    return a * b // cal_GCD(a,b)
+
+A,B = map(int,input().split())
+
+print(cal_GCD(A,B))
+print(cal_LCM(A,B))
