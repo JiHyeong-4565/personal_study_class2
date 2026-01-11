@@ -1,0 +1,16 @@
+while (True):
+    is_pel = True
+    N = str(int(input()))
+    if(N == "0"):
+        break
+
+    
+    else:
+        reverse_N = N[::-1]
+        if (N != reverse_N):
+            is_pel = False
+
+        if(is_pel):
+            print("yes")
+        else:
+            print("no")
