@@ -1,11 +1,11 @@
 while (True):
-    is_pel = True
+    is_pel = True ##플래그 사용하지 않아도 됨
     N = str(int(input()))
     if(N == "0"):
         break
 
     
-    else:
+    else:  ##if ==0에서 이미 break처리가 되고 있으므로 else 안써도 됨 들여쓰기 안할수 있음
         reverse_N = N[::-1]
         if (N != reverse_N):
             is_pel = False
