@@ -1,0 +1,14 @@
+import sys
+
+N = int(sys.stdin.readline())
+
+A =[]
+
+for i in range(N):
+    point = list(map(int,sys.stdin.readline().split()))
+    A.append(point)
+
+A.sort()
+
+for j in A:
+    print(j[0],j[1])
